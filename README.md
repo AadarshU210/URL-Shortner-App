@@ -1,0 +1,1 @@
+This is a URL-Shortner-App with Login/Register functionality, Auth and DB managed with supabase(an open source backend-as-a-service platform) and frontend with React and tailwindCSS
