@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <!-- Professional gradient for dark mode -->
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    
+    <!-- Background gradient -->
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    
+    <!-- Subtle accent gradient -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6" stop-opacity="0.1"/>
+      <stop offset="50%" style="stop-color:#1d4ed8" stop-opacity="0.05"/>
+      <stop offset="100%" style="stop-color:#3b82f6" stop-opacity="0.1"/>
+    </linearGradient>
+    
+    <!-- Subtle glow for dark mode -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Dark background -->
+  <rect width="1200" height="300" fill="url(#bannerBg)"/>
+  
+  <!-- Subtle accent overlay -->
+  <rect width="1200" height="300" fill="url(#accentGradient)"/>
+  
+  <!-- Decorative grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+  
+  <!-- Logo section (same as previous design) -->
+  <g transform="translate(80, 110)">
+    <!-- Icon container - rounded square like modern app icons -->
+    <g transform="translate(0, 0)">
+      <!-- Background shape -->
+      <rect x="0" y="0" width="40" height="40" rx="8" fill="url(#brandGradient)" opacity="0.1" stroke="#3b82f6" stroke-width="1"/>
+      
+      <!-- Link chain icon - simplified and clean -->
+      <g transform="translate(8, 10)">
+        <!-- First link -->
+        <path d="M8 6 Q12 2 16 6 Q20 10 16 14 L12 18 Q8 22 4 18 Q0 14 4 10 L8 6" 
+              fill="none" 
+              stroke="#3b82f6" 
+              stroke-width="2.5" 
+              stroke-linecap="round"/>
+        <!-- Second link -->
+        <path d="M16 10 Q20 6 24 10 Q28 14 24 18 L20 22 Q16 26 12 22 Q8 18 12 14 L16 10" 
+              fill="none" 
+              stroke="#3b82f6" 
+              stroke-width="2.5" 
+              stroke-linecap="round"/>
+      </g>
+      
+      <!-- Small "Z" overlay for uniqueness -->
+      <path d="M30 8 L36 8 L30 16 L36 16" 
+            fill="none" 
+            stroke="#3b82f6" 
+            stroke-width="2" 
+            stroke-linecap="round"/>
+    </g>
+    
+    <!-- Typography - clean and professional -->
+    <text x="55" y="25" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="32" 
+          font-weight="600" 
+          fill="#ffffff">Zip</text>
+    
+    <text x="115" y="25" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="32" 
+          font-weight="400" 
+          fill="#94a3b8">Link</text>
+    
+    <!-- Subtle dot separator -->
+    <circle cx="195" cy="8" r="2" fill="#3b82f6" opacity="0.6"/>
+    
+    <!-- Clean tagline -->
+    <text x="55" y="42" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="11" 
+          font-weight="500"
+          fill="#64748b" 
+          letter-spacing="0.5px">SHORT LINKS, BIG IMPACT</text>
+  </g>
+  
+  <!-- Main banner content -->
+  <g transform="translate(400, 80)">
+    <!-- Primary headline -->
+    <text x="0" y="40" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="48" 
+          font-weight="700" 
+          fill="#ffffff">Shorten Your Links,</text>
+    
+    <text x="0" y="90" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="48" 
+          font-weight="700" 
+          fill="#3b82f6">Expand Your Reach</text>
+    
+    <!-- Description -->
+    <text x="0" y="130" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="18" 
+          font-weight="400" 
+          fill="#94a3b8" 
+          opacity="0.9">Create custom short links, track performance, and share with confidence.</text>
+    
+    <!-- Features list -->
+    <g transform="translate(0, 160)">
+      <g transform="translate(0, 0)">
+        <circle cx="8" cy="8" r="3" fill="#3b82f6"/>
+        <text x="20" y="12" 
+              font-family="system-ui, -apple-system, sans-serif" 
+              font-size="14" 
+              font-weight="500" 
+              fill="#cbd5e1">Custom Short Links</text>
+      </g>
+      <g transform="translate(180, 0)">
+        <circle cx="8" cy="8" r="3" fill="#3b82f6"/>
+        <text x="20" y="12" 
+              font-family="system-ui, -apple-system, sans-serif" 
+              font-size="14" 
+              font-weight="500" 
+              fill="#cbd5e1">Analytics Dashboard</text>
+      </g>
+      <g transform="translate(360, 0)">
+        <circle cx="8" cy="8" r="3" fill="#3b82f6"/>
+        <text x="20" y="12" 
+              font-family="system-ui, -apple-system, sans-serif" 
+              font-size="14" 
+              font-weight="500" 
+              fill="#cbd5e1">Secure &amp; Reliable</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Decorative elements -->
+  <g transform="translate(1000, 50)">
+    <!-- Abstract link representation -->
+    <circle cx="50" cy="50" r="25" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+    <circle cx="100" cy="50" r="25" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+    <line x1="75" y1="50" x2="75" y2="50" stroke="#3b82f6" stroke-width="2" opacity="0.5">
+      <animate attributeName="x2" values="75;85;75" dur="2s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Floating dots -->
+    <circle cx="30" cy="30" r="2" fill="#3b82f6" opacity="0.4"/>
+    <circle cx="120" cy="80" r="1.5" fill="#3b82f6" opacity="0.3"/>
+    <circle cx="80" cy="20" r="1" fill="#3b82f6" opacity="0.5"/>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <line x1="0" y1="299" x2="1200" y2="299" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+</svg>
