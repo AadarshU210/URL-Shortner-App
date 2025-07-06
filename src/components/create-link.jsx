@@ -25,6 +25,7 @@ function CreateLink() {
     const navigate = useNavigate();
     const ref = useRef();
     const baseUrl = import.meta.env.VITE_BASE_URL
+    const domainName = "ziplink.ly"
 
     let [searchParams, setSearchParams] = useSearchParams();
     const longLink = searchParams.get("createNew");
@@ -117,7 +118,7 @@ function CreateLink() {
                 />
                 {errors.longUrl && <Error message={errors.longUrl} />}
                 <div className="flex items-center gap-2">
-                    <Card className="p-2">{baseUrl}</Card> /
+                    <Card className="p-2">{domainName}</Card> /
                     <Input
                         id="customUrl"
                         placeholder="Custom Link (optional)"

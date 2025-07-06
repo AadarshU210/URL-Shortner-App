@@ -6,7 +6,9 @@ import { deleteUrl } from "@/db/apiUrls";
 import { BeatLoader } from "react-spinners";
 
 const LinkCard= ({url, fetchUrls}) => {
-    const baseUrl = import.meta.env.VITE_BASE_URL;
+    const baseUrl = import.meta.env.VITE_BASE_URL;4
+
+    const domainName = "ziplink.ly"
 
     const downloadImage = () => {
         const imageUrl = url?.qr;
@@ -31,7 +33,7 @@ const LinkCard= ({url, fetchUrls}) => {
            <span className="text-3xl font-extrabold hover:underline cursor-pointer">{url?.title}</span>
            <span className="text-2xl text-blue-400 font-bold hover:underline cursor-pointer">
             {" "}
-            {`${baseUrl}/link/${url?.custom_url ? url?.custom_url : url.short_url}`}
+            {`${domainName}/link/${url?.custom_url ? url?.custom_url : url.short_url}`}
            </span>
            <span className="flex items-center gap-1 hover:underline cursor-pointer">
              <LinkIcon className="p-1" />

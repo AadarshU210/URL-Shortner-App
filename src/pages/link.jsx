@@ -25,6 +25,7 @@ const LinkPage = () => {
     document.body.removeChild(anchor);
   };
   const baseUrl = import.meta.env.VITE_BASE_URL
+  const domainName = "ziplink.ly"
   const navigate = useNavigate();
   const {user} = UrlState();
   const {id} = useParams();
@@ -75,7 +76,7 @@ const LinkPage = () => {
             target="_blank"
             className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer"
           >
-            {baseUrl}/{link}
+            {domainName}/{link}
           </a>
           <a
             href={url?.original_url}
