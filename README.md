@@ -1,12 +1,32 @@
-# React + Vite
+# 🔗 ZipLink – URL Shortener with Analytics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ZipLink is a modern URL shortener app that allows users to shorten long URLs, track the number of clicks, and gain insights into the audience interacting with their links – all built using **Supabase** as the backend.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ **Authentication**
+  - Sign up, login, and secure access to dashboard.
+  - Managed with Supabase Auth.
 
-## Expanding the ESLint configuration
+- 🔗 **URL Shortening**
+  - Accepts long URLs and generates a unique short URL.
+  - Short URLs are stored and associated with the authenticated user.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📊 **Click Tracking**
+  - Each time a short URL is clicked, the app:
+    - Increments a **click counter**
+    - Captures **location** (city) and **device info** (mobile/desktop, OS, browser)
+    - Stores stats in the database for later viewing
+
+- 👤 **User Dashboard**
+  - Logged-in users can view:
+    - Their shortened URLs
+    - Number of clicks per link
+    - Location and device analytics for each click
+
+- 🧠 **Built with:**
+  - **Frontend**: React.js
+  - **Backend**: Supabase
+  - **Geo/device detection**: https://ipapi.com
+
+---
